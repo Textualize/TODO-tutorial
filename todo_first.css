@@ -1,0 +1,19 @@
+TodoItem > Label {
+    width: 1fr;
+    height: 1fr;
+    content-align: left middle;
+}
+
+TodoItem > #date {
+    width: 10;
+}
+
+TodoItem > * {
+    margin: 0 1;
+}
+
+TodoItem {
+    layout: horizontal;
+    align: center middle;
+    height: 3;
+}

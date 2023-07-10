@@ -1,0 +1,44 @@
+TodoItem > Label {
+    width: 1fr;
+    height: 1fr;
+    content-align: left middle;
+}
+
+TodoItem > #date {
+    width: 10;
+}
+
+TodoItem > * {
+    margin: 0 1;
+}
+
+TodoItem {
+    layout: horizontal;
+    align: center middle;
+    height: 3;
+}
+
+AddItemScreen {
+    align: center middle;
+}
+
+AddItemScreen > Container > Label {
+    width: 100%;
+}
+
+AddItemScreen > Container > Input {
+    margin: 1
+}
+
+AddItemScreen > Container {
+    border: thick $background;
+    background: $boost;
+    width: 50%;
+    height: auto;
+}
+
+.emoji-button {
+    min-width: 4;
+    width: 4;
+    content-align: center middle;
+}
