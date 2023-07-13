@@ -114,13 +114,6 @@ class TodoApp(App):
         item.description, item.date = values
         self.save_data()
 
-    def item_screen_details_callback(self, item=None, values=()):
-        if item is None:
-            item = TodoItem()
-            self.screen_stack[0].mount(item)
-        item.description, item.date = values
-        self.save_data()
-
     def action_add_todo(self):
         self.push_screen(ItemScreenDetails(), self.new_item)
 

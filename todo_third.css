@@ -18,19 +18,19 @@ TodoItem {
     height: 3;
 }
 
-AddItemScreen {
+ItemScreenDetails {
     align: center middle;
 }
 
-AddItemScreen > Container > Label {
+ItemScreenDetails > Container > Label {
     width: 100%;
 }
 
-AddItemScreen > Container > Input {
+ItemScreenDetails > Container > Input {
     margin: 1
 }
 
-AddItemScreen > Container {
+ItemScreenDetails > Container {
     border: thick $background;
     background: $boost;
     width: 50%;
