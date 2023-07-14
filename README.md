@@ -1,9 +1,10 @@
-14. compound
-15. dynamic widget creation/removal
-16. free work time
-17. reactives
-18. modals
-19. CSS
-20. free work time
-21. worker
-22. free work time
+# Textual tutorial
+
+This repository holds the material for the [EuroPython 2023 Textual tutorial](https://ep2023.europython.eu/session/build-a-terminal-todo-app-with-textual).
+
+
+## Useful links
+
+ - Join the Textual Discord server – https://discord.gg/Enf6Z3qhVr.
+ - Textual documentation – https://textual.textualize.io.
+ - Textual repo – https://github.com/textualize/textual.
