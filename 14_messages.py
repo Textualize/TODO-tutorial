@@ -1,12 +1,11 @@
 from textual.app import App
-from textual.widgets import Button, Header, Input
+from textual.widgets import Button, Input
 
 
 class MyApp(App):
     def compose(self):
-        yield Header(show_clock=True)
-        yield Button("Click me!")
-        yield Input(placeholder="Name:")
+        yield Button("Ring")
+        yield Input()
 
     def on_button_pressed(self):
         self.bell()
