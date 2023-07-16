@@ -60,7 +60,7 @@ class TodoItem(Widget):
 
     def compose(self):
         with Horizontal():
-            yield Button("✅", classes="emoji-button", id="done")
+            yield Button("✅", classes="emoji-button", id="delete")
             yield Button("📝", classes="emoji-button", id="edit")
             yield self.description_label
             yield self.date_label
@@ -101,14 +101,17 @@ class TodoApp(App):
         item.description = description
         item.date = date
         self.mount(item)
+        self.save_data()
 
     def edit_item_callback(self, item, data):
         description, date = data
         item.description = description
         item.date = date
+        self.save_data()
 
     def on_todo_item_delete(self, message):
         message.item.remove()
+        self.save_data()
 
     def on_todo_item_edit(self, message):
         self.push_screen(
