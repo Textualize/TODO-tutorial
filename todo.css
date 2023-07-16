@@ -1,36 +1,37 @@
-TodoItem > Label {
+TodoItem > Horizontal > Label {
     width: 1fr;
     height: 1fr;
     content-align: left middle;
 }
 
-TodoItem > #date {
+TodoItem > Horizontal > #date {
     width: 10;
 }
 
-TodoItem > * {
+TodoItem > Horizontal > * {
     margin: 0 1;
 }
 
 TodoItem {
-    layout: horizontal;
     align: center middle;
     height: 3;
 }
 
-ItemScreenDetails {
+TodoItemDetailsScreen {
     align: center middle;
 }
 
-ItemScreenDetails > Container > Label {
+TodoItemDetailsScreen > Container > Label {
     width: 100%;
+    padding-left: 1;
+    padding-right: 1;
 }
 
-ItemScreenDetails > Container > Input {
+TodoItemDetailsScreen > Container > Input {
     margin: 1
 }
 
-ItemScreenDetails > Container {
+TodoItemDetailsScreen > Container {
     border: thick $background;
     background: $boost;
     width: 50%;

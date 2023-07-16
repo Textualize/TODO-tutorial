@@ -1,17 +1,17 @@
 from textual.app import App
-from textual.widgets import Button, Header, Input
+from textual.widgets import Button, Header, Input, Label
 
 
 class MyApp(App):
     def compose(self):
         yield Header(show_clock=True)
         yield Input(placeholder="Name:")
+        yield Input(placeholder="Surname:")
         yield Button("Submit")
 
     def on_button_pressed(self):
-        input_widget = self.query_one(Input)
-        input_value = input_widget.value
-        self.exit(input_value)
+        data = " ".join(input.value for input in self.query(Input))
+        self.mount(Label(data))
 
 
-print(MyApp().run())
+MyApp().run()
