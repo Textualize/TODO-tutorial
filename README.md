@@ -12,9 +12,11 @@ Here are the commands to install Textual in a virtual environment:
 ~:$ . .venv/bin/activate
 ~:$ python -m pip install textual
 ~:$ python -m textual  # Open the Textual demo app.
+~:$ python -m pip install textual-dev  # Utilities we'll use later in the tutorial
+~:$ textual --version
 ```
 
-The last command makes sure that Textual was installed successfully.
+The command `python -m textual` ensures Textual was correctly installed and the command `textual --version` ensures that `textual-dev` was correctly installed.
 
 
 ## Useful links
