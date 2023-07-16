@@ -21,6 +21,7 @@ The command `python -m textual` ensures Textual was correctly installed and the 
 
 ## Useful links
 
+ - Unofficial written version of this tutorial – https://mathspp.com/blog/textual-for-beginners.
  - Join the Textual Discord server – https://discord.gg/Enf6Z3qhVr.
  - Textual documentation – https://textual.textualize.io.
  - Textual repo – https://github.com/textualize/textual.
